@@ -41,10 +41,10 @@ func BinaryCustom(array []string, str string) int {
 			break
 		}else {
 			var min int = 0
-			if len((array)[mid]) > len(str) {
+			if len(array[mid]) > len(str) {
 				min = len(str)
 			}else {
-				min = len((array)[mid])
+				min = len(array[mid])
 			}
 			for j := 0; j < min; j++ {
 				if abc.GetPosition(array[mid][j:j+1],abc.ABC) < abc.GetPosition(str[j:j+1],abc.ABC) {
